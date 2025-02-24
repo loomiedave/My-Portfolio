@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'motion/react';
 import { Project } from '@/types';
+import Image from 'next/image';
 
 interface ProjectCardProps {
   project: Project;
@@ -16,9 +17,11 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
       className="bg-white rounded-lg shadow-xl overflow-hidden"
     >
       <div className="relative h-48">
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={0}
+          height={48}
           className="w-full h-full object-cover"
         />
       </div>

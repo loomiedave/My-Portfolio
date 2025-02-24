@@ -179,7 +179,7 @@ const HeroSection = () => {
               animate={{ letterSpacing: "0em" }}
               transition={{ duration: 1 }}
             >
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <motion.span 
                 className="text-blue-600 dark:text-blue-400 inline-block"
                 animate={{ 
