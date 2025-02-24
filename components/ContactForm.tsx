@@ -15,6 +15,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 export default function ContactForm() {
   const { register, handleSubmit, formState: { errors } } = useForm<ContactFormData>();
 
+  // Eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit = async (data: ContactFormData) => {
     // Implement your form submission logic here
     console.log(data);
